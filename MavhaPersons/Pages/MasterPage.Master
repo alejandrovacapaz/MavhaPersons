@@ -1,0 +1,38 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MasterPage.master.vb" Inherits="MavhaPersons.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+   <title>Mavha Persons</title>
+     <script type="text/javascript" src="../Scripts/jquery-3.3.1.min.js"></script>
+     <script type="text/javascript" src="../Scripts/jquery-ui-1.12.1.min.js"></script>
+     <script type="text/javascript" src="../Scripts/Mavha/paging.js"></script>
+     <script type="text/javascript" src="../Scripts/bootstrap.min.js"></script>     
+     <script type="text/javascript" src="../Scripts/Mavha/MavhaScript.js"></script>       
+     <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+     <link href="../Content/MavhaStyle.css" rel="stylesheet" />  
+     <asp:ContentPlaceHolder ID="head" runat="server">          
+     </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center"> 
+            <div class="offset-md-4 offset-lg-4 offset-sm-4 ofsset-xs-4 col-md-4 col-lg-4 col-sm-4 col-xs-4">
+                <h1 class="header">MAVHA</h1>
+            </div>           
+        </div>
+    </header>
+    <form id="form1" runat="server">
+        <div style="min-height:500px">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">      
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <footer>
+         <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right">           
+                <h5>@copyright Mavha</h5>                   
+        </div>
+    </footer>      
+</body>
+</html>
